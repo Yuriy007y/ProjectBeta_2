@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout-land/activity_translator1.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout-land/activity_translator2.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_about_the_programme.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main2.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main3.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main4.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main5.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_screen1.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_settings.xml" value="0.1865079365079365" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching1.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching2.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching3.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_translator1.xml" value="0.16544117647058823" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_translator2.xml" value="0.16544117647058823" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/buttons_fragment.xml" value="0.12" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/fragment_item_list.xml" value="0.1621732026143791" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/list_item.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/mode_list_item.xml" value="0.15172101449275363" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_image.xml" value="0.15172101449275363" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_image_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_list.xml" value="0.15172101449275363" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_list_fragment.xml" value="0.15172101449275363" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator1_buttons_fragment.xml" value="0.1621732026143791" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator1_text_fragment.xml" value="0.16544117647058823" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator2_list_fragment.xml" value="0.1621732026143791" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator2_text_fragment.xml" value="0.1621732026143791" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/webview_fragment.xml" value="0.16544117647058823" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

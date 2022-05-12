@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "65130157880",
+    "firebase_url": "https://samsung-project-90df5-default-rtdb.firebaseio.com",
+    "project_id": "samsung-project-90df5",
+    "storage_bucket": "samsung-project-90df5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65130157880:android:18807ca05080ab324713cd",
+        "android_client_info": {
+          "package_name": "com.myproject.projectbeta2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65130157880-qeke899u35n673puuq1uuj2n5mh7269j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Twj9dUmMiV8KM_GZJ4vdzeX2I1LMXmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65130157880-qeke899u35n673puuq1uuj2n5mh7269j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
