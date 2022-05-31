@@ -7,7 +7,7 @@
     android:rotation="0"
     android:rotationX="0"
     android:rotationY="0"
-    tools:context="com.myproject.projectbeta2.Translator1">
+    tools:context="com.myproject.projectbeta2.TranslatorFM">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,10 +35,10 @@
 
                 <fragment
                     android:id="@+id/fragment1"
-                    android:name="com.myproject.projectbeta2.Translator1ButtonsFragment"
+                    android:name="com.myproject.projectbeta2.TranslatorFMButtonsFragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:layout="@layout/translator1_buttons_fragment" />
+                    tools:layout="@layout/translator_fm_buttons_fragment" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -47,10 +47,10 @@
 
                     <fragment
                         android:id="@+id/fragment3"
-                        android:name="com.myproject.projectbeta2.Translator1TextFragment"
+                        android:name="com.myproject.projectbeta2.TranslatorFMTextFragment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        tools:layout="@layout/translator1_text_fragment" />
+                        tools:layout="@layout/translator_fm_text_fragment" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -61,10 +61,10 @@
 
                 <fragment
                     android:id="@+id/fragment2"
-                    android:name="com.myproject.projectbeta2.Translator1WebViewFragment"
+                    android:name="com.myproject.projectbeta2.TranslatorFMWebViewFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:layout="@layout/translator1_webview_fragment" />
+                    tools:layout="@layout/translator_fm_webview_fragment" />
             </RelativeLayout>
 
         </LinearLayout>

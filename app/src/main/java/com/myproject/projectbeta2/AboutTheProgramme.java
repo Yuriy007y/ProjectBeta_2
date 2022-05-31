@@ -23,7 +23,7 @@ public class AboutTheProgramme extends AppCompatActivity implements View.OnClick
         Intent intent;
         switch (v.getId()){
             case R.id.imageButton2:
-                intent = new Intent(AboutTheProgramme.this, Screen1Activity.class);
+                intent = new Intent(AboutTheProgramme.this, FirstScreenActivity.class);
                 startActivity(intent);
 
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);

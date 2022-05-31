@@ -1,6 +1,6 @@
 package com.myproject.projectbeta2;
 
-import static com.myproject.projectbeta2.Translator2.makeLetters;
+import static com.myproject.projectbeta2.TranslatorSM.makeLetters;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -16,11 +16,11 @@ import android.widget.ListView;
 
 import androidx.annotation.RequiresApi;
 
-public class Teaching1ListFragment extends Fragment {
+public class TeachingSMListFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.teaching1_list_fragment, container, false);
+        View view = inflater.inflate(R.layout.teaching_fm_list_fragment, container, false);
 
         EditText editText = (EditText) view.findViewById(R.id.editText3);
         ListView listView = (ListView) view.findViewById(R.id.List);

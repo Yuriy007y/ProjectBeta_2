@@ -21,28 +21,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectBeta2">
         <activity
-            android:name="com.myproject.projectbeta2.Teaching1"
+            android:name="com.myproject.projectbeta2.TeachingFirstMode"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.myproject.projectbeta2.Teaching2"
+            android:name="com.myproject.projectbeta2.TeachingSecondMode"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.myproject.projectbeta2.Teaching3"
+            android:name="com.myproject.projectbeta2.TeachingThirdMode"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
             android:name="com.myproject.projectbeta2.TeachingList"
             android:exported="false" />
         <activity
-            android:name="com.myproject.projectbeta2.Translator2"
+            android:name="com.myproject.projectbeta2.TranslatorSM"
             android:exported="false" />
         <activity
             android:name="com.myproject.projectbeta2.AboutTheProgramme"
             android:exported="false" />
         <activity
-            android:name="com.myproject.projectbeta2.Screen1Activity"
+            android:name="com.myproject.projectbeta2.FirstScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.myproject.projectbeta2.Translator1"
+            android:name="com.myproject.projectbeta2.TranslatorFM"
             android:exported="false"
             />
     </application>

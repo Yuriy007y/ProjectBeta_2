@@ -29,7 +29,7 @@ public class MyLetterAdapter extends ArrayAdapter<MyLetter> {
         imageView = (ImageView) convertView.findViewById(R.id.image_view_icon);
         textView = (TextView) convertView.findViewById(R.id.text_view_name);
         textView.setText(" - " + letter.letter);
-        Teaching2.LoadPicture(imageView, letter.image);
+        TeachingSecondMode.LoadPicture(imageView, letter.image);
         return convertView;
     }
 }

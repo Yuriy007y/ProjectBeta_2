@@ -15,11 +15,11 @@ public class WebAppInterface {
 
     @JavascriptInterface
     public void sendData(String ClassName, String Value, int i) {
-            Translator1.data[i][0] = ClassName;
-            Translator1.data[i][1] = Value;
+            TranslatorFM.data[i][0] = ClassName;
+            TranslatorFM.data[i][1] = Value;
 
-            Teaching3.data[i][0] = ClassName;
-            Teaching3.data[i][1] = Value;
+            TeachingThirdMode.data[i][0] = ClassName;
+            TeachingThirdMode.data[i][1] = Value;
 
     }
 }

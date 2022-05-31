@@ -11,12 +11,12 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Screen1Activity extends AppCompatActivity implements View.OnClickListener {
+public class FirstScreenActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen1);
+        setContentView(R.layout.activity_first_screen);
         Button button = (Button) findViewById(R.id.button);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button4 = (Button) findViewById(R.id.button4);
@@ -36,32 +36,32 @@ public class Screen1Activity extends AppCompatActivity implements View.OnClickLi
         Intent intent;
         switch (view.getId()) {
             case R.id.button:
-                intent = new Intent(Screen1Activity.this, Translator1.class);
+                intent = new Intent(FirstScreenActivity.this, TranslatorFM.class);
                 startActivity(intent);
 
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
 
                 break;
             case R.id.button2:
-                intent = new Intent(Screen1Activity.this, AboutTheProgramme.class);
+                intent = new Intent(FirstScreenActivity.this, AboutTheProgramme.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
                 break;
             case R.id.button4:
-                if(isOnline(Screen1Activity.this)){
-                    intent = new Intent(Screen1Activity.this, TeachingList.class);
+                if(isOnline(FirstScreenActivity.this)){
+                    intent = new Intent(FirstScreenActivity.this, TeachingList.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.slidein, R.anim.slideout);
                 }
                 else{
-                    Teaching1.CreateDialog(Screen1Activity.this, "No internet connection.");
+                    TeachingFirstMode.CreateDialog(FirstScreenActivity.this, "No internet connection.");
                 }
                 break;
             case R.id.cloud2:
-                Teaching1.CreateDialog(this, "Артековец сегодня - артековец всегда!");
+                TeachingFirstMode.CreateDialog(this, "Артековец сегодня - артековец всегда!");
                 break;
             case R.id.cloud1:
-                Teaching1.CreateDialog(this, "Семафорную азбуку разработал в 1895 году вице-адмирал Степан Осипович Макаров.");
+                TeachingFirstMode.CreateDialog(this, "Семафорную азбуку разработал в 1895 году вице-адмирал Степан Осипович Макаров.");
                 break;
         }
     }

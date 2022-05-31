@@ -14,57 +14,43 @@ import android.webkit.PermissionRequest;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.Random;
-
-public class Teaching3 extends AppCompatActivity implements View.OnClickListener {
+public class TranslatorFM extends AppCompatActivity implements View.OnClickListener{
     private String TAG = "TAAAG";
     public static String[][] data = new String[30][2];
+    public static boolean p1 = false;
     public static int timeForDel = 300;
     public static WebView myWebView;
     static Handler handler;
 
     public TextView textView;
-    public TextView textView2;
+    public Button button;
+    public ImageButton button2;
     public ImageButton button3;
 
-    public static int mode;
+    private boolean enabled = true;
 
+    AnotherThread t;
 
-    private static String word = "";
-    public int randomRange = 10;
-    private int number = 0;
-
-    private DatabaseReference dataBase;
-
-    private ImageButton button4;
-    private ImageButton button5;
-    private ImageButton button6;
-    private ImageButton button7;
 
     @Override
     protected void onStop() {
         super.onStop();
         myWebView.destroy();
+        enabled = false;
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         myWebView.destroy();
+        enabled = false;
     }
 
     @Override
@@ -76,35 +62,21 @@ public class Teaching3 extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teaching3);
-        mode = Teaching1.mode;
+        setContentView(R.layout.activity_translator_fm);
         data[0][0] = null;
         myWebView = (WebView) findViewById(R.id.webview);
         textView = (TextView) findViewById(R.id.textView);
-        textView2 = (TextView) findViewById(R.id.textView2);
-        button3 = (ImageButton) findViewById(R.id.imageButton2);
-        button6 = (ImageButton) findViewById(R.id.imageButton6);
-        button7 = (ImageButton) findViewById(R.id.imageButton7);
-
-        button4 = (ImageButton) findViewById(R.id.imageButton4);
-        button5 = (ImageButton) findViewById(R.id.imageButton5);
-
-        button7.setOnClickListener(this);
-        button6.setOnClickListener(this);
-        button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
-
+        button = (Button) findViewById(R.id.button2);
+        button2 = (ImageButton) findViewById(R.id.imageButton8);
+        button3 = (ImageButton) findViewById(R.id.imageButton);
         textView.setText("Loading...");
-        textView2.setText("");
 
+        button.setOnClickListener(this);
+        button2.setOnClickListener(this);
         button3.setOnClickListener(this);
 
+        TeachingFirstMode.CreateDialog(this, "• Для старта покажи символ 'Пробел' (обе руки вниз) \n• Для стабильной работы вы должны полностью помещаться в кадр");
 
-        dataBase = FirebaseDatabase.getInstance().getReference("Mode");
-
-        Teaching1.CreateDialog(this, "• Встаньте перед камерой и просигнальте предложенную букву \n• Для старта покажи символ 'Пробел' (обе руки вниз)");
-
-        getDataFromDB();
 
 
         handler = new Handler() {
@@ -118,39 +90,34 @@ public class Teaching3 extends AppCompatActivity implements View.OnClickListener
                     }
                     else if(msg.what < data.length){
                         if(first) {
-                            String t;
-                            if (data[msg.what][0].charAt(1) == ' ') {
-                                t = data[msg.what][0].charAt(4) + "";
-                            } else {
-                                t = data[msg.what][0].charAt(5) + "";
+                            if(p1){
+                                data[0][0] = "0 - _Idle";
                             }
-                            if(t.charAt(0) == word.charAt(number)){
-                                if(number < word.length()-1){
-                                    textView.setText(textView.getText() + "" + word.charAt(number));
-                                    textView2.setText("Next: " + word.charAt(number+1));
-                                    number++;
-                                }
-                                else{
-                                    textView.setText(word);
-                                    textView2.setText("Отлично!");
-                                    getDataFromDB();
-                                    number = 0;
-                                    first = false;
-                                }
+                            if (data[msg.what][0].charAt(1) == ' ') {
+                                textView.setText(textView.getText() + (data[msg.what][0].charAt(4) + ""));
+                            } else {
+                                textView.setText(textView.getText() + (data[msg.what][0].charAt(5) + ""));
                             }
                         }
                         else if(msg.what == 0){
                             first = true;
                             textView.setText("");
-                            textView2.setText("Next: " + (word.charAt(0)+""));
                         }
                     }
                     else{
-
+                        if(msg.what == 400 && textView.getText() != "Ready!"){
+                            String temp = (String) textView.getText();
+                            textView.setText(RLC(temp));
+                        }
+                        if(msg.what == 401){
+                            first = false;
+                        }
                     }
                 }
             }
         };
+
+
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setMediaPlaybackRequiresUserGesture(false);
         webSettings.setJavaScriptEnabled(true);
@@ -172,62 +139,37 @@ public class Teaching3 extends AppCompatActivity implements View.OnClickListener
                 }
             }
         });
-        Teaching3.AnotherThread t = new Teaching3.AnotherThread();
+        t = new AnotherThread();
         t.start();
     }
 
     public String RLC(String s) {
-        return (s == null || s.length() == 0) ? "" : (s.substring(0, s.length() - 1));
-    }
-
-    public void getDataFromDB(){
-        final Random random = new Random();
-        ValueEventListener vListener = new ValueEventListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot ds : dataSnapshot.getChildren()){
-                    Mode mode1 = ds.getValue(Mode.class);
-                    if(mode1.name.charAt(0) == '1' && mode == 1){
-                        word = mode1.words.get(random.nextInt(Math.toIntExact(mode1.number)));
-                    }
-                    if(mode1.name.charAt(0) == '0' && mode == 0){
-                        word = mode1.words.get(random.nextInt(Math.toIntExact(mode1.number)));
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        };
-        dataBase.addValueEventListener(vListener);
+        return (s == null || s.length() == 0) ? null : (s.substring(0, s.length() - 1));
     }
 
     @Override
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()){
-            case R.id.imageButton2:
-                intent = new Intent(Teaching3.this, TeachingList.class);
+            case R.id.button2:
+                if(textView.getText() != "Loading..."){
+                    textView.setText("Ready!");
+                    handler.sendEmptyMessage(401);
+                }
+                break;
+            case R.id.imageButton:
+                intent = new Intent(TranslatorFM.this, TranslatorSM.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
+
+                overridePendingTransition(R.anim.slidein, R.anim.slideout);
+
                 break;
-            case R.id.imageButton4:
-                intent = new Intent(Teaching3.this, Teaching1.class);
+            case R.id.imageButton8:
+                intent = new Intent(TranslatorFM.this, FirstScreenActivity.class);
                 startActivity(intent);
+
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
-                break;
-            case R.id.imageButton5:
-                intent = new Intent(Teaching3.this, Teaching2.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
-                break;
-            case R.id.imageButton6:
-                break;
-            case R.id.imageButton7:
-                Teaching1.CreateDialog(this, "• Для стабильной работы вы должны полностью помещаться в кадр \n• Также обеспечьте хорошее освещение");
+
                 break;
         }
     }
@@ -246,7 +188,7 @@ public class Teaching3 extends AppCompatActivity implements View.OnClickListener
                 }
             }
             handler.sendEmptyMessage(1);
-            while (true) {
+            while (enabled) {
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {

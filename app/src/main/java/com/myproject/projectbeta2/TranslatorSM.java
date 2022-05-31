@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.storage.StorageReference;
 
-public class Translator2 extends AppCompatActivity implements View.OnClickListener {
+public class TranslatorSM extends AppCompatActivity implements View.OnClickListener {
 
     private TextView textView1;
     private ImageButton imageButton1;
@@ -28,7 +28,7 @@ public class Translator2 extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_translator2);
+        setContentView(R.layout.activity_translator_sm);
 
         imageButton1 = (ImageButton) findViewById(R.id.imageButton11);
         imageButton2 = (ImageButton) findViewById(R.id.imageButton12);
@@ -37,7 +37,7 @@ public class Translator2 extends AppCompatActivity implements View.OnClickListen
         listView = (ListView) findViewById(R.id.List);
         editText = (EditText) findViewById(R.id.editText);
 
-        MyLetterAdapter myLetterAdapter = new MyLetterAdapter(Translator2.this, makeLetters("Привет"));
+        MyLetterAdapter myLetterAdapter = new MyLetterAdapter(TranslatorSM.this, makeLetters("Привет"));
         listView.setAdapter(myLetterAdapter);
 
         editText.addTextChangedListener(new TextWatcher() {
@@ -48,7 +48,7 @@ public class Translator2 extends AppCompatActivity implements View.OnClickListen
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                MyLetterAdapter myLetterAdapter = new MyLetterAdapter(Translator2.this, makeLetters(String.valueOf(editText.getText())));
+                MyLetterAdapter myLetterAdapter = new MyLetterAdapter(TranslatorSM.this, makeLetters(String.valueOf(editText.getText())));
                 listView.setAdapter(myLetterAdapter);
             }
 
@@ -64,14 +64,14 @@ public class Translator2 extends AppCompatActivity implements View.OnClickListen
         Intent intent;
         switch (v.getId()){
             case R.id.imageButton11:
-                intent = new Intent(Translator2.this, Translator1.class);
+                intent = new Intent(TranslatorSM.this, TranslatorFM.class);
                 startActivity(intent);
 
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
 
                 break;
             case R.id.imageButton12:
-                intent = new Intent(Translator2.this, Screen1Activity.class);
+                intent = new Intent(TranslatorSM.this, FirstScreenActivity.class);
                 startActivity(intent);
 
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);

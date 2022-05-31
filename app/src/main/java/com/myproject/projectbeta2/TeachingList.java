@@ -29,14 +29,14 @@ public class TeachingList extends AppCompatActivity implements View.OnClickListe
                 String name = (String) parent.getItemAtPosition(position);
                 switch (name){
                     case "Буквы":
-                        Teaching1.mode = 0;
+                        TeachingFirstMode.mode = 0;
                         break;
                     case "Слова":
-                        Teaching1.mode = 1;
+                        TeachingFirstMode.mode = 1;
                         break;
                 }
                 Intent intent;
-                intent = new Intent(TeachingList.this, Teaching1.class);
+                intent = new Intent(TeachingList.this, TeachingFirstMode.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
             }
@@ -54,7 +54,7 @@ public class TeachingList extends AppCompatActivity implements View.OnClickListe
         Intent intent;
         switch (v.getId()){
             case R.id.imageButton2:
-                intent = new Intent(TeachingList.this, Screen1Activity.class);
+                intent = new Intent(TeachingList.this, FirstScreenActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
                 break;

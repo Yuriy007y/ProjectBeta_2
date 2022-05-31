@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class Translator1TextFragment extends Fragment {
+public class TranslatorFMButtonsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.translator1_text_fragment, container, false);
+        View view = inflater.inflate(R.layout.translator_fm_buttons_fragment, container, false);
         return view;
     }
 }

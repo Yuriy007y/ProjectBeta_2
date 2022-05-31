@@ -27,7 +27,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.Random;
 
-public class Teaching2 extends AppCompatActivity implements View.OnClickListener {
+public class TeachingSecondMode extends AppCompatActivity implements View.OnClickListener {
     private EditText editText;
     private ImageView imageView;
     private TextView textView;
@@ -50,8 +50,8 @@ public class Teaching2 extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teaching2);
-        mode = Teaching1.mode;
+        setContentView(R.layout.activity_teaching_second_mode);
+        mode = TeachingFirstMode.mode;
         imageView = (ImageView) findViewById(R.id.imageView2);
         editText = (EditText) findViewById(R.id.editTextTextPersonName);
         textView = (TextView) findViewById(R.id.textView7);
@@ -70,7 +70,7 @@ public class Teaching2 extends AppCompatActivity implements View.OnClickListener
 
         getDataFromDB();
 
-        Teaching1.CreateDialog(this, "• Вводите букву, которую показывает сигнальщик.");
+        TeachingFirstMode.CreateDialog(this, "• Вводите букву, которую показывает сигнальщик.");
 
         button2.setText("Старт");
         LoadPicture(imageView, "Пробел");
@@ -136,7 +136,7 @@ public class Teaching2 extends AppCompatActivity implements View.OnClickListener
         Intent intent;
         switch (v.getId()) {
             case R.id.imageButton2:
-                intent = new Intent(Teaching2.this, TeachingList.class);
+                intent = new Intent(TeachingSecondMode.this, TeachingList.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
                 break;
@@ -154,7 +154,7 @@ public class Teaching2 extends AppCompatActivity implements View.OnClickListener
                     }
                 }
                 else if(word == ""){
-                    Toast.makeText(Teaching2.this, "Please wait...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TeachingSecondMode.this, "Please wait...", Toast.LENGTH_SHORT).show();
                 }
                 if (editText.getText().toString().toUpperCase().equals(lastWord)) {
                     editText.setText("");
@@ -163,12 +163,12 @@ public class Teaching2 extends AppCompatActivity implements View.OnClickListener
                 }
                 break;
             case R.id.imageButton4:
-                intent = new Intent(Teaching2.this, Teaching1.class);
+                intent = new Intent(TeachingSecondMode.this, TeachingFirstMode.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
                 break;
             case R.id.imageButton6:
-                intent = new Intent(Teaching2.this, Teaching3.class);
+                intent = new Intent(TeachingSecondMode.this, TeachingThirdMode.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
                 break;

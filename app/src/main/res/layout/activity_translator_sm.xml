@@ -7,7 +7,7 @@
     android:rotation="0"
     android:rotationX="0"
     android:rotationY="0"
-    tools:context="com.myproject.projectbeta2.Translator1">
+    tools:context="com.myproject.projectbeta2.TranslatorSM">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,31 +15,20 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintStart_toStartOf="parent">
         <fragment
             android:id="@+id/fragment1"
-            android:name="com.myproject.projectbeta2.Translator1ButtonsFragment"
+            android:name="com.myproject.projectbeta2.TranslatorSMTextFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/translator1_buttons_fragment" />
-
+            tools:layout="@layout/translator_sm_text_fragment" />
         <fragment
             android:id="@+id/fragment2"
-            android:name="com.myproject.projectbeta2.Translator1WebViewFragment"
+            android:name="com.myproject.projectbeta2.TranslatorSMListFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/translator1_webview_fragment" />
+            tools:layout="@layout/translator_sm_list_fragment" />
 
-        <fragment
-            android:id="@+id/fragment3"
-            android:name="com.myproject.projectbeta2.Translator1TextFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/translator1_text_fragment" />
-    </LinearLayout>
-
+        </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

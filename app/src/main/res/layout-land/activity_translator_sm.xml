@@ -7,7 +7,7 @@
     android:rotation="0"
     android:rotationX="0"
     android:rotationY="0"
-    tools:context="com.myproject.projectbeta2.Translator2">
+    tools:context="com.myproject.projectbeta2.TranslatorSM">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
             android:layout_weight="1">
             <fragment
                 android:id="@+id/fragment1"
-                android:name="com.myproject.projectbeta2.Translator2TextFragment"
+                android:name="com.myproject.projectbeta2.TranslatorSMTextFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:layout="@layout/translator2_text_fragment" />
+                tools:layout="@layout/translator_sm_text_fragment" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -36,10 +36,10 @@
 
             <fragment
                 android:id="@+id/fragment2"
-                android:name="com.myproject.projectbeta2.Translator2ListFragment"
+                android:name="com.myproject.projectbeta2.TranslatorSMListFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:layout="@layout/translator2_list_fragment" />
+                tools:layout="@layout/translator_sm_list_fragment" />
         </RelativeLayout>
 
     </LinearLayout>

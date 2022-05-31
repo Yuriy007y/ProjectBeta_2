@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
 
-public class Teaching1 extends AppCompatActivity implements View.OnClickListener {
+public class TeachingFirstMode extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editText;
     private ImageView imageView;
@@ -43,7 +43,7 @@ public class Teaching1 extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teaching1);
+        setContentView(R.layout.activity_teaching_first_mode);
 
         button = (ImageButton) findViewById(R.id.imageButton2);
 
@@ -64,11 +64,11 @@ public class Teaching1 extends AppCompatActivity implements View.OnClickListener
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         switch (mode) {
             case 0:
-                Teaching1ImageFragment newFragment1 = new Teaching1ImageFragment();
+                TeachingFMImageFragment newFragment1 = new TeachingFMImageFragment();
                 ft.replace(R.id.container, newFragment1);
                 break;
             case 1:
-                Teaching1ListFragment newFragment2 = new Teaching1ListFragment();
+                TeachingSMListFragment newFragment2 = new TeachingSMListFragment();
                 ft.replace(R.id.container, newFragment2);
                 break;
         }
@@ -85,19 +85,19 @@ public class Teaching1 extends AppCompatActivity implements View.OnClickListener
         Intent intent;
         switch (v.getId()) {
             case R.id.imageButton2:
-                intent = new Intent(Teaching1.this, TeachingList.class);
+                intent = new Intent(TeachingFirstMode.this, TeachingList.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slideout2, R.anim.slidein2);
                 break;
             case R.id.imageButton4:
                 break;
             case R.id.imageButton5:
-                intent = new Intent(Teaching1.this, Teaching2.class);
+                intent = new Intent(TeachingFirstMode.this, TeachingSecondMode.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
                 break;
             case R.id.imageButton6:
-                intent = new Intent(Teaching1.this, Teaching3.class);
+                intent = new Intent(TeachingFirstMode.this, TeachingThirdMode.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slidein, R.anim.slideout);
                 break;
