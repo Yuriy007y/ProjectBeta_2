@@ -75,7 +75,7 @@ public class TranslatorFM extends AppCompatActivity implements View.OnClickListe
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
 
-        TeachingFirstMode.CreateDialog(this, "• Для старта покажи символ 'Пробел' (обе руки вниз) \n• Для стабильной работы вы должны полностью помещаться в кадр");
+        TeachingFirstMode.CreateDialog(this, "• Для старта покажи символ 'Пробел' (обе руки вниз) \n• Для стабильной работы вы должны находиться в кадре по пояс");
 
 
 

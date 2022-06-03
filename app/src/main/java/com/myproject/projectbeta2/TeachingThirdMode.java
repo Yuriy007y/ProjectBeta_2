@@ -227,7 +227,7 @@ public class TeachingThirdMode extends AppCompatActivity implements View.OnClick
             case R.id.imageButton6:
                 break;
             case R.id.imageButton7:
-                TeachingFirstMode.CreateDialog(this, "• Для стабильной работы вы должны полностью помещаться в кадр \n• Также обеспечьте хорошее освещение");
+                TeachingFirstMode.CreateDialog(this, "• Для стабильной работы вы должны находиться в кадре по пояс \n• Также обеспечьте хорошее освещение");
                 break;
         }
     }
