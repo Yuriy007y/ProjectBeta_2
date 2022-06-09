@@ -87,8 +87,6 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:backgroundTint="#98B8B1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,32 +94,50 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@android:drawable/ic_menu_sort_alphabetically" />
+        app:srcCompat="@drawable/fm"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:padding="25px"/>
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:backgroundTint="#98B8B1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        android:backgroundTint="#98B8B1"/>
+        app:srcCompat="@drawable/sm"
+
+
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:padding="25px"/>
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF78918C"
+        android:backgroundTint="#FF617C77"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@drawable/tm"
+
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:padding="25px"
+/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
