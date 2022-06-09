@@ -7,6 +7,7 @@
     tools:context="com.myproject.projectbeta2.AboutTheProgramme">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -20,7 +21,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintVertical_bias="0.00999999"
+
+        android:scrollbars = "vertical"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
