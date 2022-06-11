@@ -22,58 +22,58 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:backgroundTint="#98B8B1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/fm"
-
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+
+        android:backgroundTint="#98B8B1"
+        android:padding="25px"
         android:scaleType="fitCenter"
-        android:padding="25px"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/fm" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:backgroundTint="#FF617C77"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#14806C"
+        android:padding="25px"
+
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/sm"
-
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:scaleType="fitCenter"
-        android:padding="25px"/>
+        app:srcCompat="@drawable/sm" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:backgroundTint="#98B8B1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/tm"
-
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:scaleType="fitCenter"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="100dp"
+
+        android:backgroundTint="#98B8B1"
         android:padding="25px"
-/>
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/tm" />
 
     <LinearLayout
         android:layout_width="0dp"

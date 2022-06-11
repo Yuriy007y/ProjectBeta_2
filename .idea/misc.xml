@@ -7,7 +7,7 @@
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout-land/activity_translator1.xml" value="0.14666666666666667" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout-land/activity_translator2.xml" value="0.1" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_about_the_programme.xml" value="0.10666666666666667" />
-        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_first_screen.xml" value="0.14719202898550723" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_first_screen.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main2.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_main3.xml" value="0.22" />
@@ -18,10 +18,10 @@
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching1.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching2.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching3.xml" value="0.1" />
-        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_first_mode.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_first_mode.xml" value="0.22" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_list.xml" value="0.16666666666666666" />
-        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_second_mode.xml" value="0.13333333333333333" />
-        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_third_mode.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_second_mode.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_teaching_third_mode.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_translator1.xml" value="0.16544117647058823" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_translator2.xml" value="0.16544117647058823" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/activity_translator_sm.xml" value="0.13269927536231885" />
@@ -33,11 +33,13 @@
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_image_fragment.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_list.xml" value="0.15172101449275363" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching1_list_fragment.xml" value="0.15172101449275363" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/teaching_fm_image_fragment.xml" value="0.12182971014492754" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator1_buttons_fragment.xml" value="0.1621732026143791" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator1_text_fragment.xml" value="0.16544117647058823" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator2_list_fragment.xml" value="0.1621732026143791" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator2_text_fragment.xml" value="0.1621732026143791" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator_fm_buttons_fragment.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator_fm_text_fragment.xml" value="0.12182971014492754" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator_sm_list_fragment.xml" value="0.13269927536231885" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/translator_sm_text_fragment.xml" value="0.13269927536231885" />
         <entry key="..\:/Android/AndroidStudioProjects/ProjectBeta2/app/src/main/res/layout/webview_fragment.xml" value="0.16544117647058823" />
