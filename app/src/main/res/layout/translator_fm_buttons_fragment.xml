@@ -11,6 +11,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/text_image"
+            android:layout_width="50sp"
+
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+
+            android:layout_marginTop="20dp"
+
+            android:padding="25px"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/a" />
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:padding="10px"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon" />
+
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_marginTop="20dp"

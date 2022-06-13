@@ -69,8 +69,15 @@ public class TeachingSecondMode extends AppCompatActivity implements View.OnClic
         button.setOnClickListener(this);
 
         getDataFromDB();
+        switch (mode){
+            case 0:
+                TeachingFirstMode.CreateDialog(this, "• Вводите букву, которую показывает сигнальщик.");
+                break;
+            case 1:
+                TeachingFirstMode.CreateDialog(this, "• Вводите слово по буквам, которые показывает сигнальщик.");
+                break;
+        }
 
-        TeachingFirstMode.CreateDialog(this, "• Вводите букву, которую показывает сигнальщик.");
 
         button2.setText("Старт");
         LoadPicture(imageView, "Пробел");

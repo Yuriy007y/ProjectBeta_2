@@ -58,10 +58,10 @@ public class FirstScreenActivity extends AppCompatActivity implements View.OnCli
                 }
                 break;
             case R.id.cloud2:
-                TeachingFirstMode.CreateDialog(this, "Артековец сегодня - артековец всегда!");
+                TeachingFirstMode.CreateDialog(this, "Артековец сегодня - артековец всегда! \n\n ");
                 break;
             case R.id.cloud1:
-                TeachingFirstMode.CreateDialog(this, "Семафорную азбуку разработал в 1895 году вице-адмирал Степан Осипович Макаров.");
+                TeachingFirstMode.CreateDialog(this, "Семафорную азбуку разработал в 1895 году вице-адмирал Степан Осипович Макаров. \n\nСемафорная забука спользуется для передачи текста на дальних дистанциях. Каждый символ семафорной азбуки это определенное положение рук человека относительно его тела.");
                 break;
         }
     }

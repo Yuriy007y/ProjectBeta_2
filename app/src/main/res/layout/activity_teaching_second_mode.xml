@@ -137,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:gravity="center"
-            android:text="Изучение"
+            android:text="Тренеровка передачи"
             android:textSize="28sp" />
 
         <ImageView

@@ -102,7 +102,17 @@ public class TeachingThirdMode extends AppCompatActivity implements View.OnClick
 
         dataBase = FirebaseDatabase.getInstance().getReference("Mode");
 
-        TeachingFirstMode.CreateDialog(this, "• Встаньте перед камерой и просигнальте предложенную букву \n• Для старта покажи символ 'Пробел' (обе руки вниз)");
+
+        switch (mode){
+            case 0:
+                TeachingFirstMode.CreateDialog(this, "• Встаньте перед камерой и просигнальте предложенную букву \n• Для старта покажите символ 'Пробел' (обе руки вниз)");
+                break;
+            case 1:
+                TeachingFirstMode.CreateDialog(this, "• Встаньте перед камерой и просигнальте слово по предложенным буквам \n• Для старта покажите символ 'Пробел' (обе руки вниз)");
+                break;
+        }
+
+
 
         getDataFromDB();
 

@@ -72,6 +72,7 @@ public class TeachingFirstMode extends AppCompatActivity implements View.OnClick
                 ft.replace(R.id.container, newFragment2);
                 break;
         }
+
         ft.addToBackStack(null);
         ft.commit();
 
