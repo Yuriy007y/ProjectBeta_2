@@ -26,6 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/a" />
 
+
         <ImageView
             android:id="@+id/camera_image"
             android:layout_width="50sp"
